@@ -18,11 +18,14 @@ namespace BuildTrimTestArea {
         static void Main(string[] args) {
             var base_folder = Directory.CreateDirectory("./yard");
             FillFolder(base_folder);
+            var child_1 = base_folder.CreateSubdirectory("first-child");
+            FillFolder(child_1);
+            var child_2 = child_1.CreateSubdirectory("second-child");
+            FillFolder(child_2);
         }
 
         static void FillFolder(DirectoryInfo folder) {
             string base_path = folder.FullName + Path.DirectorySeparatorChar;
-            string file_name;
 
             CreateFile(base_path + "01-MinusOneSecond", -1);
             CreateFile(base_path + "02-MinusOneMinute", -MINUTE);
@@ -44,6 +47,12 @@ namespace BuildTrimTestArea {
             CreateFile(base_path + "18-MinusTwoWeeks", -2 * WEEK);
             CreateFile(base_path + "19-MinusThreeWeeks", -3 * WEEK);
             CreateFile(base_path + "20-MinusOneMonth", -MONTH);
+            CreateFile(base_path + "21-MinusTwoMonths", -2 * MONTH);
+            CreateFile(base_path + "22-MinusThreeMonths", -3 * MONTH);
+            CreateFile(base_path + "23-MinusFourMonths", -4 * MONTH);
+            CreateFile(base_path + "24-MinusSixMonths", -6 * MONTH);
+            CreateFile(base_path + "25-MinusOneYear", -YEAR);
+            CreateFile(base_path + "26-MinusTwoYears", -2 * YEAR);
         }
 
         static void CreateFile(string path, int age) {
