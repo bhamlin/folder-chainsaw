@@ -5,6 +5,8 @@ VisualStudioVersion = 15.0.26430.16
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Trim", "Trim\Trim.csproj", "{8ACBEAEE-788F-4D47-ABB1-7B1A055859C7}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BuildTrimTestArea", "BuildTrimTestArea\BuildTrimTestArea.csproj", "{DC310212-76B7-44A5-B020-653C25015C04}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -15,6 +17,10 @@ Global
 		{8ACBEAEE-788F-4D47-ABB1-7B1A055859C7}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{8ACBEAEE-788F-4D47-ABB1-7B1A055859C7}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{8ACBEAEE-788F-4D47-ABB1-7B1A055859C7}.Release|Any CPU.Build.0 = Release|Any CPU
+		{DC310212-76B7-44A5-B020-653C25015C04}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DC310212-76B7-44A5-B020-653C25015C04}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DC310212-76B7-44A5-B020-653C25015C04}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DC310212-76B7-44A5-B020-653C25015C04}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
