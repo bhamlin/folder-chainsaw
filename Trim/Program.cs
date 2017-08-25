@@ -9,7 +9,8 @@ namespace coop.bre.trim {
     class Program {
 
         static void Main(string[] args) {
-            Console.WriteLine("Hello, Fool!");
+            ArgParser.Parse(args);
+            Console.WriteLine("Hello, Fool! " + ArgParser.RetentionAge);
         }
 
     }
